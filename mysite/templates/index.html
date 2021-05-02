@@ -1,0 +1,99 @@
+<head>
+{% load static %}
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <script src="{% static 'script.js'%}"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="{% static 'poppins.css'%}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css'%}">
+    <script src="{% static 'jquery.min.js'%}"></script>
+    <script src="{% static 'bootstrap1.js'%}"></script>
+    <link rel="stylesheet" href="w3.css">
+    <link href="{% static 'font-awesome.min.css'%}" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Home</title>
+</head>
+<body>
+<!--navbar begins-->
+<nav class="navv" id="navbar">
+        <div class="logoo"><a href="index.html">
+            <h4>Spice of Life</h4></a>
+        </div>
+<ul class="nav-linkss">
+
+    <li><a href="login.html">Log In</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="menu.html">Order</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+</ul>
+<div class="burgerr">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+</div>
+</nav>
+<!--navbar ends-->
+<section id="Home">
+    <div class="bg">
+    <img src="{% static 'sidebanner.png'%}" style="float:right;">
+    </div>
+</section>
+
+<!-- Made with Love section starts-->
+<section id="#love">
+    <div class="lovelove">
+        <img src="{% static 'love.jpg' %}" style="float: right;"><br><br><br>
+        <h1 style="font-family: 'Poppins', sans serif; margin-left: 200px; margin-top: 50px;">Made with Love<br> Simply Delicious</h1> <br>
+        <p style="font-size: 15px; font-family: 'Poppins', sans serif; margin-left: 200px; width:500px; ">Test our new recommender to get personalised choices and order the kind of food which would make you drool.</p>
+    <button class="button" style="margin-left: 350px;">View Menu</button>
+    </div>
+</section>
+
+<!--about section starts-->
+<section id="about">
+        <div class="aboutbox">
+            <h2><center>A Fresh and Seasonal Cuisine</center></h2>
+            <p style="font-size: 15px; font-family: 'Poppins', sans serif; ">
+                Taste the rich spices used in cuisines all over the world. Explore the world of food.
+            </p>
+            <center><button class="button" style="margin-top: -5px;">Order Now</button></center>
+        </div>
+</section>
+<section id="reserve">
+    <div class="reserve">
+        <h1 style="font-family: 'Poppins', sans serif;">
+            <center><br>Book your Reservation</center>
+        </h1>
+        <center><br>
+            <input type="date" style=" border:  2px solid #7c6d4c; padding: 12px 20px; margin-left: 50px;">
+        <input type="time" style=" border:  2px solid #7c6d4c;  padding: 12px 20px; ">
+        <input type="number" style="  border:  2px solid #7c6d4c;  padding: 12px 20px;"><br><br>
+            <br></center>
+        <center><button class="button" style="font-size: 15px;">Book Now</button></center>
+    </div>
+</section>
+</body>
+<footer>
+    <div class="text" style="height: 70px; background-color: #7c6d4c;">
+        <h2 style="font-family: 'Poppins', sans serif; background-color: #7c6d4c; font-size: 18px; margin:0px; padding-left: 15px; float: left; padding-top: 27px; color: white;">&copy; Copyright 2020</h2>
+        <h2 style="font-family: 'Poppins', sans serif; background-color: #7c6d4c; font-size: 18px; margin:0px; padding-right: 15px; float: right; padding-top: 27px; color: white;">
+            Designed and Developed by xyz
+        </h2>
+    </div>
+</footer>
+<script>
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>

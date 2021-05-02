@@ -1,0 +1,57 @@
+<head>
+{% load static %}
+    <link rel="stylesheet" href="{% static 'login.css'%}">
+    <script src="{% static 'script.js'%}"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="{% static 'poppins.css'%}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}">
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css'%}">
+    <script src="{% static 'jquery.min.js' %}"></script>
+    <script src="{% static 'bootstrap1.js'%}"></script>
+    <link rel="stylesheet" href="{% static 'w3.css'%}">
+    <link href="{% static 'font-awesome.min.css'%}" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Log In</title>
+</head>
+<body>
+<!--navbar begins-->
+<nav class="navv" id="navbar">
+        <div class="logoo"><a href="index.html">
+            <h4>Spice of Life</h4></a>
+        </div>
+<ul class="nav-linkss">
+
+    <li><a href="login.html">Log In</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="menu.html">Order</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+</ul>
+<div class="burgerr">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+</div>
+</nav>
+<!--navbar ends-->
+
+    <div id="about">
+        <div class="aboutcontent">
+            <h1 style="padding-top: 30px; font-family: 'poppins', sans serif; transform-text: uppercase;">
+                <center>LOGIN</center>
+            </h1><br>
+            <center>
+            <form id="loginform">
+                <label for="username">Username: </label>
+                <input type="text" id="username" name="username" style="margin-left:50px;"></input><br><br>
+                <label for="password">Password: </label>
+                <input type="password" id="password" name="password" style="margin-left: 56px;"></input>
+            </form><br>
+                Don't have an account? <a href="signup.html" style="color: #7c6d4c;">Sign Up.</a><br><br>
+                <button class="btn" style=" background-color: #7c6d4c;" onclick="document.location='indexlogged.html'">Login</button>
+            </center>
+    </div>
+
+</body>

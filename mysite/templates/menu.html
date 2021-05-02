@@ -1,0 +1,103 @@
+<head>
+{% load static %}
+    <link rel="stylesheet" href="{% static 'menu.css'%}">
+    <script src="{% static 'script.js'%}"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="{% static 'poppins.css'%}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}">
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css'%}">
+    <script src="{% static 'jquery.min.js'%}"></script>
+    <script src="{% static 'bootstrap1.js'%}"></script>
+    <link rel="stylesheet" href="{% static 'w3.css'%}">
+    <link href="{% static 'font-awesome.min.css'%}" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="{% static 'script.js'%}"></script>
+</head>
+<body>
+<!--navbar begins-->
+<nav class="navv" id="navbar">
+        <div class="logoo"><a href="../index.html">
+            <h4>Spice of Life</h4></a>
+        </div>
+<ul class="nav-linkss">
+
+    <li><a href="login.html">Log In</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="menu.html">Order</a></li>
+    <li><a href="contact.html">Contact Us</a></li>
+</ul>
+<div class="burgerr">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+</div>
+</nav>
+<!--navbar ends-->
+<section id="headercont">
+    <div class="headercont">
+            MENU
+    </div>
+</section>
+<section id="items">
+    <div class="col-sm-3" style="height: 400px; background-color: #fbf8f1; margin-left: 70px; margin-top: 100px;">
+        <center><img src="{% static 'cheesemaggi.jpg'%}" style="margin-top: 40px;"></center><br>
+        <center><p style="font-family: 'poppins', sans-serif; font-size: 25px;">Cheese Maggi</p>
+        <button class="button">Order Now</button></center>
+    </div>
+    <div class="col-sm-3" style="height: 400px; background-color: #fbf8f1; margin-left: 100px; margin-top: 100px;">
+        <center><img src="{% static 'chickentikka.jpg' %}" style="margin-top: 40px;"></center><br>
+        <center><p style="font-family: 'poppins', sans-serif; font-size: 25px;">Chicken Tikka</p>
+        <button class="button">Order Now</button></center>
+    </div>
+    <div class="col-sm-3" style="height:400px; background-color: #fbf8f1; margin-left: 100px; margin-top: 100px;">
+        <center><img src="{% static 'masalamaggie.jpg'%}" style="margin-top: 40px;"></center><br>
+        <center><p style="font-family: 'poppins', sans-serif; font-size: 25px;">Masala Maggi</p>
+        <button class="button">Order Now</button></center>
+    </div>
+    <br>
+    <div class="col-sm-3" style="height: 400px; background-color: #fbf8f1; margin-left: 270px; margin-top: 100px;">
+        <center><img src="{% static 'paneertikka.jpg'%}" style="margin-top: 40px;"></center><br>
+        <center><p style="font-family: 'poppins', sans-serif; font-size: 25px;">{{menu1.name}}</p>
+        <button class="button">Order Now</button></center>
+    </div>
+    <div class="col-sm-3" style="height: 400px; background-color: #fbf8f1; margin-left: 100px; margin-top: 100px;">
+        <center><img src="{% static 'vegmaggi.jpg'%}" style="margin-top: 40px;"></center><br>
+        <center><p style="font-family: 'poppins', sans-serif; font-size: 25px;">Veg Maggi</p>
+        <button class="button">Order Now</button></center>
+    </div>
+</section>
+<section id="recommender">
+    <div class="recommender">
+        <center><p style="font-size: 30px;  font-family: 'Poppins', sans serif; margin-top: -150px;">Try out our Recommender</p>
+        <p style="font-family: 'Poppins', sans serif; font-size: 15px;">Just click the Surprise Me button</p></center><br><br>
+       <center><p id="itemshare"></p>
+        <button class="button" id="getitems" value="Quotes" onclick="Loaditems();" style="">Surprise Me</button>
+       </center>
+    </div>
+</section>
+</body>
+<footer>
+    <div class="text" style="height: 70px; background-color: #7c6d4c;">
+        <h2 style="font-family: 'Poppins', sans serif; background-color: #7c6d4c; font-size: 18px; margin:0px; padding-left: 15px; float: left; padding-top: 27px; color: white;">&copy; Copyright 2020</h2>
+        <h2 style="font-family: 'Poppins', sans serif; background-color: #7c6d4c; font-size: 18px; margin:0px; padding-right: 15px; float: right; padding-top: 27px; color: white;">
+            Designed and Developed by xyz
+        </h2>
+    </div>
+</footer>
+<script>
+    window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("navbar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+</script>
